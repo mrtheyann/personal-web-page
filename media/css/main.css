@@ -1,4 +1,13 @@
-/* ---- reset ---- */
+/* ---- fonts ---- */
+
+@font-face {
+  font-family:'Southbank';
+  src:url("../fonts/SouthbankLT.ttf");
+}
+@font-face {
+  font-family:'Dense';
+  src:url("../fonts/Dense-Regular.otf");
+}
 
 /* ---- wrapper ----*/
 
@@ -44,6 +53,8 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
   }
 }
 
+/* ----  spinner ---- */
+
 .spinner-wrapper{
   left:50%;
   position:absolute;
@@ -54,7 +65,7 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 }
 
 .spinner{
-  background-color:#17E7A4;
+  background-color:#6daedb;
   border-radius:50%;
   height:99px;
   width:99px;
@@ -78,20 +89,41 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
   top:0;
   position:absolute;
 }
+
+/* ---- banner ---- */
+
+.banner-wrapper {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.banner-text h1{
+  color: #2892d7;
+  font-family: 'Southbank';
+  font-size: 5.6rem;
+  margin-bottom: 15px;
+}
+
+.banner-text p {
+  color: #6daedb;
+  font-size: 2.7em;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
 /* ---- debug ---- */
-*{
+
+/*{
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-body {
-  margin: 0;
-  font:normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
+}*/
 
 /* ---- particles.js container ---- */
 
@@ -99,25 +131,31 @@ canvas {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #486375;
+  /*background-color: #486375;*/
+  background-color: #1b4353  ;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.banner-wrapper {
-  opacity: 0;
-  position: relative;
-  z-index: 2;
-  background-color: white;
-  width: 50%;
-  margin: 0 auto;
-  padding: 25px;
-  min-height: 3000px;
-  border-left: solid #333;
-  border-right: solid #333;
+/* ---- main ---- */
+
+html{
+  font-family:'Dense', Helvetica, sans-serif;
+  font-size: 95%;
 }
+
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- addition ---- */
 
 .banner-wrapper.loaded {
   opacity: 1;
