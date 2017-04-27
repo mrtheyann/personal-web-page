@@ -178,6 +178,26 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
   z-index: 0;
 }
 
+/* ---- adaptive ---- */
+
+@media (max-width: 320px) {
+  .banner-social { font-size: 1.6em }
+  .banner-text h1{ font-size: 3em }
+  .banner-text p { font-size: 2em }
+}
+
+@media (min-width: 768px) {
+  .banner-social { font-size:4.2rem }
+  .banner-social span { margin:55px 4.5% }
+  .banner-text h1 {
+    font-size: 8.4rem;
+    letter-spacing: 9px;
+    word-spacing: 13px;
+    }
+  .banner-text p { font-size:3.6rem };
+}
+
+
 /* ---- main ---- */
 
 html{
