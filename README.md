@@ -1,2 +1,3 @@
 # personal-web-page
-- Soon will get hosted on [Surge](https://surge.sh/)
+## [Temporal domain](http://pastoral-bird.surge.sh/)
+- Hosted on [Surge](https://surge.sh/)
