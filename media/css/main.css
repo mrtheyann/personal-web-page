@@ -1,8 +1,8 @@
 /* ---- fonts ---- */
 
 @font-face {
-  font-family:'Southbank';
-  src:url("../fonts/SouthbankLT.ttf");
+  font-family:'Bushcraft';
+  src:url("../fonts/ping2.otf");
 }
 @font-face {
   font-family:'Dense';
@@ -14,26 +14,7 @@
 html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 
-@-webkit-keyframes race{
-  0% {
-      -webkit-transform:rotate(0deg) scale(1);
-      transform:rotate(0deg) scale(1);
-    }
-  50% {
-      -webkit-transform:rotate(45deg) scale(1.2);
-      transform:rotate(45deg) scale(1.2);
-    }
-  75% {
-      -webkit-transform:rotate(90deg) scale(1.2);
-      transform:rotate(90deg) scale(1.2);
-    }
-  100% {
-      -webkit-transform:rotate(360deg) scale(1);
-      transform:rotate(360deg) scale(1);
-    }
-}
-
-@keyframes race {
+@keyframes rotate {
   0% {
     -webkit-transform:rotate(0deg) scale(1);
     transform:rotate(0deg) scale(1);
@@ -46,10 +27,24 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
     -webkit-transform:rotate(90deg) scale(1.2);
     transform:rotate(90deg) scale(1.2);
   }
-
   100% {
     -webkit-transform:rotate(360deg) scale(1);
     transform:rotate(360deg) scale(1);
+  }
+}
+
+@keyframes ripple {
+ 0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.8);
+    }
+  100% {
+    -webkit-transform:scale(1);
+    transform: scale(1);
   }
 }
 
@@ -65,10 +60,11 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 }
 
 .spinner{
-  background-color:#6daedb;
+  background-color:#0081af;
   border-radius:50%;
   height:99px;
   width:99px;
+  animation: ripple 2s linear infinite;
 }
 
 .spinner:after, .spinner:before{
@@ -79,15 +75,19 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
   border-radius:50%;
 }
 
-.race:after{
-  -webkit-animation: race 1100ms linear infinite;
-  animation:race 1100ms linear infinite;
+.rotate:after{
+  -webkit-animation: rotate 1100ms linear infinite;
+  animation: rotate 1100ms linear infinite;
   border:4px solid transparent;
-  border-top-color:#f583b5;
-  border-bottom-color:#f583b5;
+  border-top-color:#eaba6b;
+  border-bottom-color:#eaba6b;
   left:0;
   top:0;
   position:absolute;
+}
+
+body {
+  background-color: #1b4353;
 }
 
 /* ---- banner-wrapper ---- */
@@ -126,28 +126,50 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 }
 
 /* ---- banner-text ----*/
+.banner-text {
+}
 
 .banner-text h1{
-  color: #2892d7;
-  font-family: 'Southbank';
-  font-size: 5.6rem;
+  opacity: 0.8;
+  color: #eaba6b;
+  font-family: 'Bushcraft';
+  font-size: 8vw;
   margin-bottom: 15px;
+  margin-top: 5px;
 }
 
 .banner-text p {
-  color: #6daedb;
-  font-size: 2.7em;
+  color: #f1d3a0;
+  font-size: 2.7vw;
   letter-spacing: 1.5px;
   line-height: 1.5;
 }
 
+/* ----  banner-logo  ----*/
+
+.logo {
+  position:static;
+  height: 25%;
+  width: 100%;
+
+
+  display: inline-block;
+
+  -webkit-mask: url(../assets/svg/mountain.svg) no-repeat 50% 50%;
+  mask: url(../assets/svg/mountain.svg) no-repeat 50% 50%;
+  -webkit-mask-size: 60vw 15vw;
+  mask-size: 60vw 15vw;
+}
+
+.logo-colored { background-color: #f0f3bd; }
+
 /* ---- banner-social ----*/
 
 .banner-social {
-  font-size:2.7rem;
+  font-size:2.7vw;
  }
 .banner-social span {
-  color :#d7ebf7;
+  color :#f1e2ca;
   margin: 35px 4.5%;
 }
 .banner-social span:hover {
@@ -161,7 +183,7 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 
 /*{
   background-color: rgba(0, 0, 0, 0.1);
-}*/
+}*
 
 /* ---- particles.js container ---- */
 
@@ -170,7 +192,7 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
   width: 100%;
   height: 100%;
   /*background-color: #486375;*/
-  background-color: #1b4353  ;
+  background-color: #173753  ;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,22 +203,37 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 /* ---- adaptive ---- */
 
 @media (max-width: 320px) {
-  .banner-social { font-size: 1.6em }
-  .banner-text h1{ font-size: 3em }
+  .logo {
+    mask-size: 15em 5em;
+    width: 100%;
+    height: 20%;
+  }
+  .banner-social { font-size: 1.4em }
+  .banner-text h1{ font-size: 2.3em }
+  .banner-text p { font-size: 1.4em }
+}
+
+@media (min-width: 325px) and (max-width: 375px) {
+  .logo {
+    mask-size: 17.5em 6.25em;
+    width: 100%;
+    height: 20%;
+  }
+  .banner-social { font-size: 1.8em }
+  .banner-text h1{ font-size: 2.7em }
+  .banner-text p { font-size: 1.8em }
+}
+
+@media (min-width: 376px) and (max-width: 420px) {
+  .logo {
+    mask-size: 20em 7.5em;
+    width: 100%;
+    height: 20%;
+  }
+  .banner-social { font-size: 2em }
+  .banner-text h1{ font-size: 2.9em }
   .banner-text p { font-size: 2em }
 }
-
-@media (min-width: 768px) {
-  .banner-social { font-size:4.2rem }
-  .banner-social span { margin:55px 4.5% }
-  .banner-text h1 {
-    font-size: 8.4rem;
-    letter-spacing: 9px;
-    word-spacing: 13px;
-    }
-  .banner-text p { font-size:3.6rem };
-}
-
 
 /* ---- main ---- */
 
