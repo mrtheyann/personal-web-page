@@ -87,7 +87,7 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 }
 
 body {
-  background-color: #1b4353;
+  background-color: #173753;
 }
 
 /* ---- banner-wrapper ---- */
@@ -147,7 +147,7 @@ body {
 
 /* ----  banner-logo  ----*/
 
-.logo {
+.banner-logo {
   position:static;
   height: 25%;
   width: 100%;
