@@ -9,7 +9,7 @@
   src:url("../fonts/Dense-Regular.otf");
 }
 
-/* ---- wrapper ----*/
+/* ---- animation keyframes ----*/
 
 html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
 html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
@@ -141,6 +141,7 @@ body {
 }
 
 /* ---- banner-text ----*/
+
 .banner-text {
 }
 
@@ -194,11 +195,13 @@ body {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 /* ---- debug ---- */
 
 /*{
   background-color: rgba(0, 0, 0, 0.1);
 }*
+
 
 /* ---- particles.js container ---- */
 
@@ -206,8 +209,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  /*background-color: #486375;*/
-  background-color: #173753  ;
+  background-color: #173753;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,7 +252,7 @@ body {
   .banner-text p { font-size: 2em }
 }
 
-/* ---- main ---- */
+/* ---- basic html  ---- */
 
 html{
   font-family:'Dense', Helvetica, sans-serif;
