@@ -142,9 +142,6 @@ body {
 
 /* ---- banner-text ----*/
 
-.banner-text {
-}
-
 .banner-text h1{
   opacity: 0.8;
   color: #eaba6b;
@@ -167,10 +164,7 @@ body {
   position:static;
   height: 25%;
   width: 100%;
-
-
   display: inline-block;
-
   -webkit-mask: url(../assets/svg/mountain.svg) no-repeat 50% 50%;
   mask: url(../assets/svg/mountain.svg) no-repeat 50% 50%;
   -webkit-mask-size: 60vw 15vw;
