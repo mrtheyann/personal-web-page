@@ -205,6 +205,17 @@ ali
   .banner-text p { font-size: 1.4em }
 }
 
+@media (max-width: 320px) {
+  .logo {
+    mask-size: 15em 5em;
+    width: 100%;
+    height: 20%;
+  }
+  .banner-social { font-size: 1.4em }
+  .banner-text h1{ font-size: 2.3em }
+  .banner-text p { font-size: 1.4em }
+}
+
 @media (min-width: 325px) and (max-width: 375px) {
   .logo {
     mask-size: 17.5em 6.25em;
@@ -225,6 +236,22 @@ ali
   .banner-social { font-size: 2em }
   .banner-text h1{ font-size: 2.9em }
   .banner-text p { font-size: 2em }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .banner-social {
+      font-size:2.8rem;
+      word-spacing:33px;
+   }
+  .banner-social span { margin:63px 3.5%; }
+  .banner-text h1 {
+      font-size: 6rem;
+      word-spacing: 33px;
+    }
+  .banner-text p {
+    font-size:2.8rem;
+    line-height:1.2
+  }
 }
 
 /* ---- basic html  ---- */
