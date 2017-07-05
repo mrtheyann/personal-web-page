@@ -27,31 +27,32 @@ html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
     to { -webkit-transform: rotate(360deg); }
 }
 @keyframes shadowspin {
-   0% {  transform:rotate(0deg);
-     box-shadow:inset 0px 0px 15px rgba(234, 186, 107,1); }
-    55% { box-shadow:inset 0px 0px 35px rgba(234, 186, 107,0.5); }
+  0% {  transform:rotate(0deg);
+     box-shadow:inset 0px 0px 15px rgba(144, 159, 173,1); }
 
-   100% { transform:rotate(360deg);
-     box-shadow:inset 0px 0px 15px rgba(234, 186, 107,1); }
+  55% { box-shadow:inset 0px 0px 35px rgba(144, 159, 173,0.5); }
+
+  100% { transform:rotate(360deg);
+     box-shadow:inset 0px 0px 15px rgba(144, 159, 173,1); }
 }
 @-moz-keyframes shadowspin {
    0% { -moz-transform:rotate(0deg);
-     box-shadow:inset 0px 0px 15px rgba(234, 186, 107,1); }
+     box-shadow:inset 0px 0px 15px  rgba(144, 159, 173,1); }
 
-    55% { box-shadow:inset 0px 0px 35px rgba(234, 186, 107); }
+    55% { box-shadow:inset 0px 0px 35px rgba(144, 159, 173); }
 
    100% {
     -moz-transform:rotate(360deg);
-    box-shadow:inset 0px 0px 15px rgba(234, 186, 107,1); }
+    box-shadow:inset 0px 0px 15px rgba(144, 159, 173,1); }
 }
 @-webkit-keyframes shadowspin {
    0% {-webkit-transform:rotate(0deg);
-       box-shadow:inset 0px 0px 25px rgba(234, 186, 107,1); }
+       box-shadow:inset 0px 0px 25px  rgba(144, 159, 173,1); }
 
-   55% { box-shadow:inset 0px 0px 5px rgba(234, 186, 107,0.5); }
+   55% { box-shadow:inset 0px 0px 5px rgba(144, 159, 173,0.5); }
 
    100% {-webkit-transform:rotate(360deg);
-       box-shadow:inset 0px 0px 25px rgba(234, 186, 107,1); }
+       box-shadow:inset 0px 0px 25px rgba(144, 159, 173,1); }
 }
 
 /* ----  spinner ---- */
