@@ -142,7 +142,7 @@ body {
 /* ----  banner-logo  ----*/
 
 .banner-logo {
-  position:static;
+  position: static;
   height: 25%;
   width: 100%;
   display: inline-block;
@@ -160,7 +160,6 @@ body {
 
 .banner-social {
   font-size:2.7vw;
-  word-spacing: 1rem;
  }
 .banner-social span {
   color :#f1e2ca;
@@ -171,7 +170,6 @@ body {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-ali
 }
 
 
@@ -200,12 +198,18 @@ ali
 
 @media (max-width: 320px) {
   .banner-logo {
-    -webkit-mask-size: 18rem 6rem;
-    -moz-mask-size: 18rem 6rem;
-    -o-mask-size: 18rem 6rem;
-    mask-size: 18rem 6rem;
+    -webkit-mask-size: 16rem 4rem;
+    -moz-mask-size: 16rem 4rem;
+    -o-mask-size: 16rem 4rem;
+    mask-size: 16rem 4rem;
+    height: 20%;
   }
-  .banner-social { font-size: 1.4em }
+  .banner-social {
+    font-size: 1.4em;
+  }
+  .banner-social span {
+    margin-top: 43px 3.5%;
+  }
   .banner-text h1{ font-size: 2.3em }
   .banner-text p { font-size: 1.4em }
 }
@@ -229,21 +233,17 @@ ali
     -o-mask-size: 26rem 8rem;
     mask-size: 26rem 8rem;
   }
-  .banner-social span {
-    margin:63px 3.5%;
-    margin-top: 3rem;
-   }
   .banner-social { font-size: 1.7em; }
   .banner-text h1{ font-size: 3.6em; }
-  .banner-text p { font-size: 2em; margin-top: 3rem;}
+  .banner-text p { font-size: 2em;}
 }
 
 @media (min-width: 425px) and (max-width: 814px) {
   .banner-logo {
-    -webkit-mask-size: 24rem 8rem;
-    -moz-mask-size: 24rem 8rem;
-    -o-mask-size: 24rem 8rem;
-    mask-size: 24rem 8rem;
+    -webkit-mask-size: 24rem 6rem;
+    -moz-mask-size: 24rem 6rem;
+    -o-mask-size: 24rem 6rem;
+    mask-size: 24rem 6rem;
   }
   .banner-social {
       font-size:1.5rem;
@@ -261,8 +261,8 @@ ali
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   .banner-logo {
-    -webkit-mask-size: 42em 16em;
-    mask-size: 42em 16em;
+    -webkit-mask-size: 40em 10em;
+    mask-size: 40em 10em;
   }
   .banner-social {
       font-size:2.2rem;
@@ -279,6 +279,8 @@ ali
     margin-top: 4rem;
   }
 }
+
+
 
 /* ---- basic html  ---- */
 
