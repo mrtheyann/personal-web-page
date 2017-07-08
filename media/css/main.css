@@ -9,10 +9,55 @@
   src:url("../fonts/Dense-Regular.otf");
 }
 
+/* ---- basic html  ---- */
+
+html{
+  font-family:'Dense', Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- addition ---- */
+
+.banner-wrapper.loaded {
+  opacity: 1;
+}
+
+.title {
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+  width: 20em;
+  top: 5em;
+  margin: 0 auto;
+}
+
+.hide {
+  display:none;
+  transition:all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
 /* ---- animation keyframes ----*/
 
-html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
-html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}
+html { box-sizing:border-box }
+
+*,
+*::after,
+*::before { box-sizing:inherit }
+
+html { box-sizing:border-box }
+
+*,
+*::after,
+*::before { box-sizing:inherit }
 
 @keyframes spin {
     from {transform:rotate(0deg);}
@@ -159,7 +204,7 @@ body {
 /* ---- banner-social ----*/
 
 .banner-social {
-  font-size:2.7vw;
+  font-size: 2.7vw;
  }
 .banner-social span {
   color :#f1e2ca;
@@ -171,14 +216,6 @@ body {
   transform: scale(1.2);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-/* ---- debug ---- */
-
-/*{
-  background-color: rgba(0, 0, 0, 0.1);
-}*
-
 
 /* ---- particles.js container ---- */
 
@@ -194,7 +231,7 @@ body {
   z-index: 0;
 }
 
-/* ---- adaptive ---- */
+/* ---- adaptive media queries ---- */
 
 @media (max-width: 320px) {
   .banner-logo {
@@ -278,40 +315,8 @@ body {
   }
 }
 
+/* ---- debug ---- */
 
-
-/* ---- basic html  ---- */
-
-html{
-  font-family:'Dense', Helvetica, sans-serif;
-  font-size: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-/* ---- addition ---- */
-
-.banner-wrapper.loaded {
-  opacity: 1;
-}
-
-.title {
-  position: relative;
-  font-size: 32px;
-  color: #fff;
-  width: 20em;
-  top: 5em;
-  margin: 0 auto;
-}
-
-.hide {
-  display:none;
-  transition:all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
+/*{
+  background-color: rgba(0, 0, 0, 0.1);
+}*
