@@ -191,15 +191,13 @@ body {
   height: 25%;
   width: 100%;
   display: inline-block;
-  -webkit-mask: url(../assets/svg/mountain.svg) no-repeat 50% 50%;
-  mask: url(../assets/svg/mountain.svg) no-repeat 50% 50%;
-  -webkit-mask-size: 60vw 15vw;
-  -moz-mask-size: 60vw 15vw;
-  -o-mask-size: 60vw 15vw;
-  mask-size: 60vw 15vw;
+  background: url(../assets/svg/mountain.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 60vw 15vw;
 }
 
-.logo-colored { background-color: #f0f3bd; }
+/*.logo-colored { background-color: #f0f3bd; } */
 
 /* ---- banner-social ----*/
 
@@ -235,10 +233,7 @@ body {
 
 @media (max-width: 320px) {
   .banner-logo {
-    -webkit-mask-size: 16rem 4rem;
-    -moz-mask-size: 16rem 4rem;
-    -o-mask-size: 16rem 4rem;
-    mask-size: 16rem 4rem;
+    background-size: 16rem 4rem;
     height: 20%;
   }
   .banner-social {
@@ -253,10 +248,7 @@ body {
 
 @media (min-width: 325px) and (max-width: 375px) {
   .banner-logo {
-    -webkit-mask-size: 22rem 6rem;
-    -moz-mask-size: 22rem 6rem;
-    -o-mask-size: 22rem 6rem;
-    mask-size: 22rem 6rem;
+    background-size: 22rem 6rem;
   }
   .banner-social { font-size: 1.6em }
   .banner-text h1{ font-size: 3.2em }
@@ -265,10 +257,7 @@ body {
 
 @media (min-width: 376px) and (max-width: 420px) {
   .banner-logo {
-    -webkit-mask-size: 26rem 8rem;
-    -moz-mask-size: 26rem 8rem;
-    -o-mask-size: 26rem 8rem;
-    mask-size: 26rem 8rem;
+    background-size: 26rem 8rem;
   }
   .banner-social { font-size: 1.7em; }
   .banner-text h1{ font-size: 3.6em; }
@@ -277,10 +266,7 @@ body {
 
 @media (min-width: 425px) and (max-width: 814px) {
   .banner-logo {
-    -webkit-mask-size: 24rem 6rem;
-    -moz-mask-size: 24rem 6rem;
-    -o-mask-size: 24rem 6rem;
-    mask-size: 24rem 6rem;
+    background-size: 24rem 6rem;
   }
   .banner-social {
       font-size:1.5rem;
@@ -297,8 +283,7 @@ body {
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   .banner-logo {
-    -webkit-mask-size: 40em 10em;
-    mask-size: 40em 10em;
+    background-size: 40em 10em;
   }
   .banner-social {
       font-size:2.2rem;
